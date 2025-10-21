@@ -143,10 +143,10 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start w-full sm:w-auto"
             >
-              <a href="#portfolio" className="group">
-                <button className="relative px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+              <a href="#portfolio" className="group w-full sm:w-auto">
+                <button className="relative px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 w-full sm:w-auto"
                         style={{
                           background: 'linear-gradient(135deg, #8B5CF6, #10B981)',
                           boxShadow: '0 4px 20px rgba(139, 92, 246, 0.3)'
@@ -157,8 +157,8 @@ const Home = () => {
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </a>
-              <a href="#contact">
-                <button className="px-8 py-3 glass-enhanced rounded-lg font-medium transition-all duration-300 hover:scale-105"
+              <a href="#contact" className="w-full sm:w-auto">
+                <button className="px-8 py-3 glass-enhanced rounded-lg font-medium transition-all duration-300 hover:scale-105 w-full sm:w-auto"
                         style={{ border: '1px solid rgba(139, 92, 246, 0.3)' }}
                         onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(139, 92, 246, 0.1)'}
                         onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.03)'}>
